@@ -1,82 +1,90 @@
-# Programme de formation Python
+# Programme de formation Python — Phase 2
+
+## Profil actuel
+
+Noah maîtrise : variables, conditions, boucles, fonctions (bases).
+Objectif : approfondir chaque concept Python en profondeur et construire de vrais programmes.
+
+---
 
 ## Règles générales
 
 - **Du mardi au samedi** — 5 sessions par semaine
-- Chaque jour : exos → build → libre, dans cet ordre
-- Chaque session génère ses propres fichiers — tu codes dans le dossier créé par l'agent
-- Après chaque session, lis le débrief : c'est là que la progression se construit
+- Chaque jour : projet → libre, dans cet ordre
+- Tu codes dans les dossiers créés par l'agent — ne jamais modifier `tester.py` ni `instructions.html`
 
 ---
 
 ## Chaque jour (Mardi → Samedi)
 
-### Partie 1 — Exos (~45 min)
+### Partie 1 — Projet (~1h30)
 
-> 5 petits exercices indépendants, un par fichier, difficulté croissante. Tu t'arrêtes où tu bloques.
+> 6 exercices progressifs sur un seul concept, style Codédex. Du "découvrir" au "programme complet".
 
-1. Lance `/python-exos` — l'agent génère 5 fichiers directement
-2. Lance `python 01_[notion].py`, corrige jusqu'à voir `✅ Correct !`
-3. Passe au fichier suivant
-4. Arrête-toi quand tu bloques — c'est normal de pas finir les 5
-
-**Objectif de progression :**
-
-- Semaines 1-2 : finir les 3 premiers fichiers
-- Semaines 3+ : finir les 5 sans chercher dans la doc
-
----
-
-### Partie 2 — Build (~1h)
-
-> Tu construis un mini-programme à partir d'un scaffold. Le `main.py` est écrit, les fonctions sont à toi.
-
-1. Lance `/python-build` — l'agent propose 3 projets, tu choisis
-2. Lis `main.py` pour comprendre ce que le programme est censé faire
-3. Implémente les fonctions dans `project.py` une par une
-4. Lance `python main.py` jusqu'à ce que le programme tourne de bout en bout
+1. Lance `/python-projet` — l'agent génère 6 exercices dans un dossier
+2. Pour chaque exercice, dans l'ordre :
+   - `open instructions.html` — lis le concept et les instructions en premier
+   - Code dans `main.py`
+   - `python tester.py` — vérifie que tes tests passent
+3. Passe au dossier suivant quand tous les tests sont verts
+4. Tu peux t'arrêter où tu bloques — dis-moi jusqu'où t'es allé
 
 **Objectif de progression :**
 
-- Semaines 1-2 : faire tourner le programme même si c'est pas élégant
-- Semaines 3+ : utiliser les bons outils Python du premier coup
+- Semaines 1-2 : finir les 4 premiers exercices, bloquer sur 05 ou 06
+- Semaines 3+ : finir les 6, proposer une amélioration au programme final
 
 ---
 
-### Partie 3 — Libre (~1h)
+### Partie 2 — Libre (~1h)
 
 > Tu codes ce que tu veux autour de Nahla, Malik et Kays. From scratch, pas de scaffold.
 
-1. Lance `/python-libre` — l'agent propose 5 idées, tu choisis
+1. Lance `/python-libre` — l'agent propose des idées, tu choisis
 2. Tu pars d'un fichier vide et tu codes
-3. Tu peux demander de l'aide — tu auras des indices, pas du code
+3. Tu peux demander de l'aide — tu auras des indices, jamais du code
 4. Le programme doit tourner à la fin
 
 **Objectif de progression :**
 
-- Semaines 1-2 : arriver à un programme qui tourne même si c'est simple
+- Semaines 1-2 : arriver à un programme qui tourne, même simple
 - Semaines 3+ : coder sans demander d'aide
 
 ---
 
 ## Récap hebdomadaire
 
-| Jour     | Partie 1          | Partie 2          | Partie 3          | Total    |
-| -------- | ----------------- | ----------------- | ----------------- | -------- |
-| Mardi    | `/python-exos`    | `/python-build`   | `/python-libre`   | ~2h45    |
-| Mercredi | `/python-exos`    | `/python-build`   | `/python-libre`   | ~2h45    |
-| Jeudi    | `/python-exos`    | `/python-build`   | `/python-libre`   | ~2h45    |
-| Vendredi | `/python-exos`    | `/python-build`   | `/python-libre`   | ~2h45    |
-| Samedi   | `/python-exos`    | `/python-build`   | `/python-libre`   | ~2h45    |
+| Jour     | Partie 1         | Partie 2        | Total |
+| -------- | ---------------- | --------------- | ----- |
+| Mardi    | `/python-projet` | `/python-libre` | ~2h30 |
+| Mercredi | `/python-projet` | `/python-libre` | ~2h30 |
+| Jeudi    | `/python-projet` | `/python-libre` | ~2h30 |
+| Vendredi | `/python-projet` | `/python-libre` | ~2h30 |
+| Samedi   | `/python-projet` | `/python-libre` | ~2h30 |
 
-**Total : ~13h45/semaine**
+**Total : ~12h30/semaine**
+
+---
+
+## Progression des concepts
+
+Les sessions `/python-projet` couvrent les concepts dans cet ordre :
+
+1. **Fonctions** — définir, paramètres, return, scope, combiner
+2. **Listes** — méthodes, boucles, index, trier
+3. **Chaînes de caractères** — méthodes, f-strings, formatage
+4. **Dictionnaires** — lire, écrire, boucler
+5. **Modules** — random, math, datetime
+6. **Boucles avancées** — while, break, enumerate
+7. **Fonctions avancées** — valeurs par défaut, return multiple
+8. **Gestion d'erreurs** — try/except, raise
 
 ---
 
 ## Signaux de progression
 
-Tu es à l'aise en Python quand :
+Tu passes au concept suivant quand :
 
-- **Exos** : tu finis les 5 fichiers sans chercher dans la doc
-- **Build** : tu lis un stub de fonction et tu sais quoi écrire du premier coup
-- **Global** : tu arrives sur du code que tu n'as pas écrit, tu comprends ce qu'il fait et tu sais où ajouter le tien
+- Tu finis les 6 exercices sans bloquer plus de 10 min sur un seul
+- Tu lis le code d'une fonction et tu sais exactement ce qu'elle fait
+- Tu réutilises le concept spontanément dans `/python-libre` sans qu'on te le rappelle
